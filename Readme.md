@@ -1,4 +1,4 @@
-docker-mirakurun-epgstation
+docker-mirakurun-epgstation for PX-Q3U4
 ====
 
 [Mirakurun](https://github.com/Chinachu/Mirakurun) + [EPGStation](https://github.com/l3tnun/EPGStation) の Docker コンテナ
@@ -7,14 +7,14 @@ docker-mirakurun-epgstation
 
 Docker, docker-compose の導入が必須
 
-PT3 + [m-tsudo/pt3](https://github.com/m-tsudo/pt3) の組み合わせを想定
+PX-Q3U4 + [nns779/px4_drv](https://github.com/nns779/px4_drv) の組み合わせを想定
 
 ホスト上の pcscd は停止する
 
 ## インストール手順
 
 ```
-$ git clone https://github.com/l3tnun/docker-mirakurun-epgstation.git
+$ git clone https://github.com/ShinkoLab/docker-mirakurun-epgstation
 $ cd docker-mirakurun-epgstation
 $ sudo docker-compose pull
 $ sudo docker-compose build
