@@ -17,14 +17,10 @@ services:
         environment:
             TZ: "Asia/Tokyo"
         devices:
-            - /dev/px4video0:/dev/px4video0
-            - /dev/px4video1:/dev/px4video1
-            - /dev/px4video2:/dev/px4video2
-            - /dev/px4video3:/dev/px4video3
-            - /dev/px4video0:/dev/px4video4
-            - /dev/px4video1:/dev/px4video5
-            - /dev/px4video2:/dev/px4video6
-            - /dev/px4video3:/dev/px4video7
+            - /dev/dvb/adapter0:/dev/dvb/adapter0
+            - /dev/dvb/adapter1:/dev/dvb/adapter1
+            - /dev/dvb/adapter2:/dev/dvb/adapter2
+            - /dev/dvb/adapter3:/dev/dvb/adapter3
             #- /dev/bus/usb/00x/00x # card reader
         #restart: always
 

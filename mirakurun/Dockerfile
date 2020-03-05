@@ -7,15 +7,25 @@ RUN apt-get update && \
     apt-get -y install pcscd libpcsclite1 libccid pcsc-tools && \
     apt-get -y install $DEV && \
 \
-# recpt1
+# dvb-tools
 \
-    git clone https://github.com/stz2012/recpt1 /tmp/recpt1 && \
-    cd /tmp/recpt1/recpt1 && \
-    ./autogen.sh && \
-    ./configure && \
-    make && \
-    make install && \
+    apt-get -y install dvb-tools && \
 \
+# dvb-ch-list
+\
+    git clone https://github.com/Chinachu/dvbconf-for-isdb.git /tmp/dvbconf-for-isdb && \
+    cat /tmp/dvbconf-for-isdb/conf/dvbv5_channels_isdbs.conf /tmp/dvbconf-for-isdb/conf/dvbv5_channels_isdbt.conf | tee -a /tmp/dvbconf-for-isdb/conf/dvbv5_channels_isdb.conf && \
+    mv /tmp/dvbconf-for-isdb /etc/dvbconf-for-isdb && \
+\
+## recpt1
+#\
+#    git clone https://github.com/stz2012/recpt1 /tmp/recpt1 && \
+#    cd /tmp/recpt1/recpt1 && \
+#    ./autogen.sh && \
+#    ./configure && \
+#    make && \
+#    make install && \
+#\
 # pm2
 \
     npm install pm2 -g && \
