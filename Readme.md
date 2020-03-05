@@ -1,4 +1,4 @@
-docker-mirakurun-epgstation for PX-Q3U4
+docker-mirakurun-epgstation for DD Max M4
 ====
 
 [Mirakurun](https://github.com/Chinachu/Mirakurun) + [EPGStation](https://github.com/l3tnun/EPGStation) の Docker コンテナ
@@ -7,7 +7,8 @@ docker-mirakurun-epgstation for PX-Q3U4
 
 Docker, docker-compose の導入が必須
 
-PX-Q3U4 + [nns779/px4_drv](https://github.com/nns779/px4_drv) の組み合わせを想定
+Digital Devices Max M4 + [DigitalDevices/dddvb](https://github.com/DigitalDevices/dddvb) の組み合わせを想定
+当環境では [ppa:frodo-vdr/dddvb-0.9.37](https://launchpad.net/~frodo-vdr/+archive/ubuntu/dddvb-0.9.37) を使用
 
 ホスト上の pcscd は停止する
 
